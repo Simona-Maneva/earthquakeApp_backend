@@ -13,7 +13,6 @@ A Spring Boot REST API that fetches real-time earthquake data from the USGS API,
 - Hibernate
 - Maven
 - PostgreSQL
-- Mockito & JUnit (Testing)
 
 ---
 
@@ -27,7 +26,6 @@ A Spring Boot REST API that fetches real-time earthquake data from the USGS API,
 - Delete specific earthquake records
 - Automatic data synchronization
 - Global exception handling with custom exceptions
-- Unit testing using Mockito
 
 ---
 
@@ -118,27 +116,9 @@ Global exception handling is implemented using @RestControllerAdvice
 
 ---
 
-## Testing
-
-### Run Tests 
-
-```bash
-mvn test
-```
-
-### Covered scenarios:
-
-- Filtering logic
-- Sync logic (repository interaction)
-- Time-based filtering
-- Delete operations
-
----
-
 ## Optional Improvements Implemented
 
 - Global exception handler (@RestControllerAdvice)
-- Service layer unit tests (Mockito)
 - Clean layered architecture
 - External API integration (USGS)
 - Automatic data refresh via sync endpoint
